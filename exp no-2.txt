@@ -1,0 +1,13 @@
+n = int(input("Enter size of first array: "))
+arr1 = list(map(int, input("Enter first array: ").split()))
+
+m = int(input("Enter size of second array: "))
+arr2 = list(map(int, input("Enter second array: ").split()))
+
+common = []
+
+for x in arr1:
+    if x in arr2 and x not in common:
+        common.append(x)
+
+print("Common Elements:", common)

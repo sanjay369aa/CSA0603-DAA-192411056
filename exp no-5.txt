@@ -1,0 +1,10 @@
+n = int(input("Enter size of array: "))
+arr = list(map(int, input("Enter array elements: ").split()))
+
+maximum = arr[0]
+
+for x in arr:
+    if x > maximum:
+        maximum = x
+
+print("Maximum Element:", maximum)

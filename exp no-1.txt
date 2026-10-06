@@ -1,0 +1,16 @@
+n = int(input("Enter number of strings: "))
+arr = []
+
+for i in range(n):
+    arr.append(input("Enter string: "))
+
+found = False
+
+for word in arr:
+    if word == word[::-1]:
+        print("First Palindromic String:", word)
+        found = True
+        break
+
+if not found:
+    print("No Palindromic String")

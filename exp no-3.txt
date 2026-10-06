@@ -1,0 +1,13 @@
+n = int(input("Enter size of array: "))
+arr = list(map(int, input("Enter array elements: ").split()))
+
+total = 0
+
+for i in range(n):
+    s = set()
+
+    for j in range(i, n):
+        s.add(arr[j])
+        total += len(s) ** 2
+
+print("Sum of Squares:", total)
